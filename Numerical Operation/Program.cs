@@ -6,9 +6,8 @@ namespace Numerical_Operation
     {
         static void Main(string[] args)
         {
+            GetEvenOdd();
             /*
-             GetEvenOdd();
-
              AccountLogin();
 
              GetGrade();
