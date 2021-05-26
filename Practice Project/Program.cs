@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Numerical_Operation
+namespace Practice_Project
 {
     class Program
     {
@@ -459,7 +459,7 @@ namespace Numerical_Operation
             {
                 return 'A';
             }
-            else if(percent >= 60)
+            else if (percent >= 60)
             {
                 return 'B';
             }
@@ -472,7 +472,9 @@ namespace Numerical_Operation
                 return 'D';
             }
         }
-
-
     }
 }
+
+
+
+
