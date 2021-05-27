@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Text;
+
 
 namespace Practice_Project
 {
@@ -16,6 +18,10 @@ namespace Practice_Project
             CheckVowel();
 
             GetLoopEvenOddValues();
+
+            DisplayArray();
+
+            AdditionArray();
 
             CheckprimeValueType1();
 
@@ -35,8 +41,14 @@ namespace Practice_Project
 
             RetryPinAttempts();
 
+            FizzBuzzProgramType1();
+
+            GettingGrade();
+
             Console.WriteLine("Grade : " + GettingGrade());
             */
+
+
         }
 
         /// <summary>
@@ -151,6 +163,45 @@ namespace Practice_Project
                     Console.WriteLine(i + " is an Odd number");
                 }
             }
+        }
+
+        /// <summary>
+        /// To display the given array inputs from the user
+        /// </summary>
+        static void DisplayArray()
+        {
+            int[] arr = new int[10];
+
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Console.WriteLine("Enter element {0}: ", i);
+                arr[i] = int.Parse(Console.ReadLine());
+            }
+
+            Console.Write("Elements in arrays are: ");
+            for (int j = 0; j < arr.Length; j++)
+            {
+                Console.Write("{0} ", arr[j]);
+            }
+        }
+
+        /// <summary>
+        /// To add the given array inputs from the user
+        /// </summary>
+        static void AdditionArray()
+        {
+            int[] arr = new int[10];
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Console.WriteLine("Enter elements inputs: ", i);
+                arr[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            int result = 0;
+            foreach (int item in arr)
+            {
+                result += item;
+            }
+            Console.WriteLine("\nAddition of inputs are: {0}", result);
         }
 
         /// <summary>
@@ -397,36 +448,6 @@ namespace Practice_Project
         }
 
         /// <summary>
-        /// fizz buzz program in which multiple of 3,5 will be displayed fizz and buzz respectively and number which is multiple of both will be displayed as fizzbuzz
-        /// </summary>
-        static void FizzBuzzProgramType2()
-        {
-            string output = null;
-            int counter = 1;
-            while (counter <= 100)
-            {
-                if (counter % 3 == 0)
-                {
-                    output = "Fizz";
-                }
-                else if (counter % 5 == 0)
-                {
-                    output = output + "Buzz";
-                }
-                else if (output == null)
-                {
-                    Console.WriteLine(counter);
-                }
-                else
-                {
-                    Console.WriteLine(output);
-                }
-
-                counter++;
-            }
-        }
-
-        /// <summary>
         /// getting grades in terms of A,B,C,D out of the program by passing 3 values of marks
         /// </summary>
         /// <returns></returns>
@@ -472,6 +493,7 @@ namespace Practice_Project
                 return 'D';
             }
         }
+
     }
 }
 

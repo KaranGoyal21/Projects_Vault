@@ -3,7 +3,7 @@
 namespace Calculator
 {
 
-    class Program
+    class CalculatorApp
     {
 
         static void Main(string[] args)
