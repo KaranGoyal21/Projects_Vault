@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Text;
-
 
 namespace Practice_Project
 {
@@ -58,8 +56,9 @@ namespace Practice_Project
             GettingGrade();
 
             Console.WriteLine("Grade : " + GettingGrade());
-            */
 
+            DisplayTriangle();
+            */
         }
 
         /// <summary>
@@ -194,7 +193,7 @@ namespace Practice_Project
             string s = Console.ReadLine();
             char[] chArr = s.ToLower().ToCharArray();
 
-            for(int i = 1; i < (chArr.Length - 1); i++)
+            for (int i = 1; i < (chArr.Length - 1); i++)
             {
                 Console.Write(chArr[i]);
             }
@@ -209,9 +208,9 @@ namespace Practice_Project
             string s = Console.ReadLine();
             char[] chArr = s.ToLower().ToCharArray();
 
-            foreach(char ch in chArr)
+            foreach (char ch in chArr)
             {
-                switch(ch)
+                switch (ch)
                 {
                     case 'e':
                         break;
@@ -226,427 +225,435 @@ namespace Practice_Project
         /// To increment the counter from zero to 10. It should also display the even odd number along with the increment value.
         /// </summary>
         static void GetLoopEvenOddValues()
+        {
+            for (int i = 1; i <= 10; i++)
             {
-                for (int i = 1; i <= 10; i++)
-                {
 
-                    if (i % 2 == 0)
-                    {
-                        Console.WriteLine(i + " is an Even number");
-                    }
-                    else
-                    {
-                        Console.WriteLine(i + " is an Odd number");
-                    }
+                if (i % 2 == 0)
+                {
+                    Console.WriteLine(i + " is an Even number");
+                }
+                else
+                {
+                    Console.WriteLine(i + " is an Odd number");
                 }
             }
+        }
 
-            /// <summary>
-            /// To display the given array inputs from the user using loop structure
-            /// </summary>
-            static void DisplayArray()
+        /// <summary>
+        /// To display the given array inputs from the user using loop structure
+        /// </summary>
+        static void DisplayArray()
+        {
+            int[] arr = new int[10];
+
+            for (int i = 0; i < arr.Length; i++)
             {
-                int[] arr = new int[10];
-
-                for (int i = 0; i < arr.Length; i++)
-                {
-                    Console.WriteLine("Enter element {0}: ", i);
-                    arr[i] = int.Parse(Console.ReadLine());
-                }
-
-                Console.Write("Elements in arrays are: ");
-                for (int j = 0; j < arr.Length; j++)
-                {
-                    Console.Write("{0} ", arr[j]);
-                }
+                Console.WriteLine("Enter element {0}: ", i);
+                arr[i] = int.Parse(Console.ReadLine());
             }
 
-            /// <summary>
-            /// To add the given array inputs from the user using loop structure
-            /// </summary>
-            static void AdditionArray()
+            Console.Write("Elements in arrays are: ");
+            for (int j = 0; j < arr.Length; j++)
             {
-                int[] arr = new int[10];
-                for (int i = 0; i < arr.Length; i++)
+                Console.Write("{0} ", arr[j]);
+            }
+        }
+
+        /// <summary>
+        /// To add the given array inputs from the user using loop structure
+        /// </summary>
+        static void AdditionArray()
+        {
+            int[] arr = new int[10];
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Console.WriteLine("Enter element {0}: ", i);
+                arr[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            int result = 0;
+            foreach (int item in arr)
+            {
+                result += item;
+            }
+            Console.WriteLine("\nAddition of inputs are: {0}", result);
+        }
+
+        /// <summary>
+        /// To multiply the given array inputs from the user using loop structure
+        /// </summary>
+        static void MultiplicationArray()
+        {
+            int[] arr = new int[10];
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Console.WriteLine("Enter element {0}: ", i);
+                arr[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            int result = 1;
+            foreach (int item in arr)
+            {
+                result *= item;
+            }
+            Console.WriteLine("\nMultiplication of inputs are: {0}", result);
+        }
+
+        /// <summary>
+        /// To print the specific given array inputs from the user using loop structure
+        /// </summary>
+        static void PrintSpecificArray()
+        {
+            int[] arr = new int[10];
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Console.WriteLine("Enter element {0}: ", i);
+                arr[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            for (int j = 3; j < 7; j++)
+            {
+                Console.Write("{0} ", arr[j]);
+            }
+        }
+
+        /// <summary>
+        /// get inputs form user and showcase whether it is a prime number or not using square root
+        /// </summary>
+        static void CheckprimeValueType1()
+        {
+            int num = int.Parse(Console.ReadLine());
+            bool isprime = true;
+
+            for (int i = 2; i <= Math.Sqrt(num); i++)
+            {
+
+                if (num % i == 0)
                 {
-                    Console.WriteLine("Enter element {0}: ", i);
-                    arr[i] = Convert.ToInt32(Console.ReadLine());
+                    isprime = false;
+                    break;
                 }
-                int result = 0;
-                foreach (int item in arr)
-                {
-                    result += item;
-                }
-                Console.WriteLine("\nAddition of inputs are: {0}", result);
+
+            }
+            if (isprime)
+            {
+                Console.WriteLine("prime");
+            }
+            else
+            {
+                Console.WriteLine("not prime");
             }
 
-            /// <summary>
-            /// To multiply the given array inputs from the user using loop structure
-            /// </summary>
-            static void MultiplicationArray()
+
+        }
+
+        /// <summary>
+        /// get inputs form user and showcase whether it is a prime number or not using for condition
+        /// </summary>
+        static void CheckprimeValueType2()
+        {
+            int num = int.Parse(Console.ReadLine());
+            bool isprime = true;
+            for (int i = 2; i < num; i++)
             {
-                int[] arr = new int[10];
-                for (int i = 0; i < arr.Length; i++)
+
+                if (num % i == 0)
                 {
-                    Console.WriteLine("Enter element {0}: ", i);
-                    arr[i] = Convert.ToInt32(Console.ReadLine());
+                    isprime = false;
+                    break;
                 }
-                int result = 1;
-                foreach (int item in arr)
-                {
-                    result *= item;
-                }
-                Console.WriteLine("\nMultiplication of inputs are: {0}", result);
+
             }
-
-            /// <summary>
-            /// To print the specific given array inputs from the user using loop structure
-            /// </summary>
-            static void PrintSpecificArray()
+            if (isprime)
             {
-                int[] arr = new int[10];
-                for (int i = 0; i < arr.Length; i++)
-                {
-                    Console.WriteLine("Enter element {0}: ", i);
-                    arr[i] = Convert.ToInt32(Console.ReadLine());
-                }
-                for (int j = 3; j < 7; j++)
-                {
-                    Console.Write("{0} ", arr[j]);
-                }
+                Console.WriteLine("prime");
             }
-
-            /// <summary>
-            /// get inputs form user and showcase whether it is a prime number or not using square root
-            /// </summary>
-            static void CheckprimeValueType1()
+            else
             {
-                int num = int.Parse(Console.ReadLine());
-                bool isprime = true;
+                Console.WriteLine("not prime");
+            }
+        }
 
-                for (int i = 2; i <= Math.Sqrt(num); i++)
+        /// <summary>
+        /// get inputs form user and showcase whether it is a prime number or not using while condition
+        /// </summary>
+        static void CheckprimeValueType3()
+        {
+            bool isprime = true;
+            int count = 0;
+            int num = 1;
+            int userinput = int.Parse(Console.ReadLine());
+
+            while (count < userinput)
+            {
+                isprime = true;
+                for (int a = 2; a < num; a++)
                 {
-
-                    if (num % i == 0)
+                    if (num % a == 0)
                     {
                         isprime = false;
                         break;
                     }
-
                 }
                 if (isprime)
                 {
-                    Console.WriteLine("prime");
+                    Console.Write(num + "\t");
+                    count++;
                 }
-                else
-                {
-                    Console.WriteLine("not prime");
-                }
-
-
+                num++;
             }
+        }
 
-            /// <summary>
-            /// get inputs form user and showcase whether it is a prime number or not using for condition
-            /// </summary>
-            static void CheckprimeValueType2()
+        /// <summary>
+        /// showcase first 100 prime numbers
+        /// </summary>
+        static void First100PrimeNumbers()
+        {
+            for (int num = 1; num <= 100; num++)
             {
-                int num = int.Parse(Console.ReadLine());
                 bool isprime = true;
                 for (int i = 2; i < num; i++)
                 {
-
                     if (num % i == 0)
                     {
                         isprime = false;
                         break;
                     }
+                }
+                if (isprime)
+                    Console.Write(num + "\t");
 
+            }
+            Console.WriteLine();
+        }
+
+        /// <summary>
+        /// To print the even,odd,prime and non prime number in given array inputs from the user using loop structure displaying index number
+        /// </summary>
+        static void PrintEvenOddPrimeNonPrimeArrayValuesWithIndexNumber()
+        {
+            int[] arr = new int[10];
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Console.WriteLine("Enter element {0}: ", i);
+                arr[i] = Convert.ToInt32(Console.ReadLine());
+            }
+            for (int j = 0; j < arr.Length; j++)
+            {
+                if (arr[j] % 2 == 0)
+                {
+                    Console.Write("\nInput index {0} with value {1} is an Even number", j, arr[j]);
+                }
+                else
+                {
+                    Console.Write("\nInput index {0} with value {1} is an Odd number", j, arr[j]);
+                }
+                bool isprime = true;
+                for (int z = 2; z < arr[j]; z++)
+                {
+                    if (arr[j] % z == 0)
+                    {
+                        isprime = false;
+                        break;
+                    }
                 }
                 if (isprime)
                 {
-                    Console.WriteLine("prime");
+                    Console.WriteLine("\nInput index {0} with value {1} is a prime number", j, arr[j]);
                 }
                 else
                 {
-                    Console.WriteLine("not prime");
+                    Console.WriteLine("\nInput index {0} with value {1} is not a prime number", j, arr[j]);
                 }
             }
+        }
 
-            /// <summary>
-            /// get inputs form user and showcase whether it is a prime number or not using while condition
-            /// </summary>
-            static void CheckprimeValueType3()
+        /// <summary>
+        /// get input number from user and showing table of that number till 10 values
+        /// </summary>
+        static void DisplayTable()
+        {
+            int num = int.Parse(Console.ReadLine());
+            for (int i = 1; i <= 10; i++)
             {
-                bool isprime = true;
-                int count = 0;
-                int num = 1;
-                int userinput = int.Parse(Console.ReadLine());
-
-                while (count < userinput)
-                {
-                    isprime = true;
-                    for (int a = 2; a < num; a++)
-                    {
-                        if (num % a == 0)
-                        {
-                            isprime = false;
-                            break;
-                        }
-                    }
-                    if (isprime)
-                    {
-                        Console.Write(num + "\t");
-                        count++;
-                    }
-                    num++;
-                }
+                int result = i * num;
+                Console.WriteLine("{0} * {1} = {2}", num, i, result);
             }
+        }
 
-            /// <summary>
-            /// showcase first 100 prime numbers
-            /// </summary>
-            static void First100PrimeNumbers()
+        /// <summary>
+        /// get input number from user and showing table of number till you reach the input number table
+        /// </summary>
+        static void DisplayTableTillGivenValue()
+        {
+            int num = int.Parse(Console.ReadLine());
+            for (int a = 1; a <= num; a++)
             {
-                for (int num = 1; num <= 100; num++)
-                {
-                    bool isprime = true;
-                    for (int i = 2; i < num; i++)
-                    {
-                        if (num % i == 0)
-                        {
-                            isprime = false;
-                            break;
-                        }
-                    }
-                    if (isprime)
-                        Console.Write(num + "\t");
 
-                }
-                Console.WriteLine();
-            }
-
-            /// <summary>
-            /// To print the even,odd,prime and non prime number in given array inputs from the user using loop structure displaying index number
-            /// </summary>
-            static void PrintEvenOddPrimeNonPrimeArrayValuesWithIndexNumber()
-            {
-                int[] arr = new int[10];
-                for (int i = 0; i < arr.Length; i++)
-                {
-                    Console.WriteLine("Enter element {0}: ", i);
-                    arr[i] = Convert.ToInt32(Console.ReadLine());
-                }
-                for (int j = 0; j < arr.Length; j++)
-                {
-                    if (arr[j] % 2 == 0)
-                    {
-                        Console.Write("\nInput index {0} with value {1} is an Even number", j, arr[j]);
-                    }
-                    else
-                    {
-                        Console.Write("\nInput index {0} with value {1} is an Odd number", j, arr[j]);
-                    }
-                    bool isprime = true;
-                    for (int z = 2; z < arr[j]; z++)
-                    {
-                        if (arr[j] % z == 0)
-                        {
-                            isprime = false;
-                            break;
-                        }
-                    }
-                    if (isprime)
-                    {
-                        Console.WriteLine("\nInput index {0} with value {1} is a prime number", j, arr[j]);
-                    }
-                    else
-                    {
-                        Console.WriteLine("\nInput index {0} with value {1} is not a prime number", j, arr[j]);
-                    }
-                }
-            }
-
-            /// <summary>
-            /// get input number from user and showing table of that number till 10 values
-            /// </summary>
-            static void DisplayTable()
-            {
-                int num = int.Parse(Console.ReadLine());
                 for (int i = 1; i <= 10; i++)
                 {
-                    int result = i * num;
-                    Console.WriteLine("{0} * {1} = {2}", num, i, result);
+                    int result = i * a;
+                    Console.WriteLine("{0} * {1} = {2}", a, i, result);
+                }
+                Console.WriteLine("--------------");
+            }
+        }
+
+        /// <summary>
+        /// calculating number of digits from given number from user
+        /// </summary>
+        static void CalculateDigits()
+        {
+            int a = int.Parse(Console.ReadLine());
+            int temp = a;
+            int digit = 0;
+
+            while (temp != 0)
+            {
+                temp = temp / 10;
+                digit++;
+            }
+            Console.WriteLine("{0} is {1} digit number", a, digit);
+        }
+
+        /// <summary>
+        /// accept only three attempts of input pin from user or else block the account
+        /// </summary>
+        static void LimitPinAttempts()
+        {
+            string actualpin = "1234";
+            string pinbyuser;
+            int count = 0;
+
+            do
+            {
+                pinbyuser = Console.ReadLine();
+                count++;
+            }
+            while (pinbyuser != actualpin && count < 3);
+
+            if (pinbyuser == actualpin)
+            {
+                Console.WriteLine("Welcome User");
+            }
+            else
+            {
+                Console.WriteLine("Account Block");
+            }
+        }
+
+        /// <summary>
+        /// accept only three attempts of input pin from user, show the number of failed attempts and after 3 attempts block the account
+        /// </summary>
+        static void RetryPinAttempts()
+        {
+            string actualpin = "9876";
+            string pinbyuser;
+            int count = 0;
+
+            do
+            {
+                pinbyuser = Console.ReadLine();
+                count++;
+                if (pinbyuser != actualpin)
+                {
+                    Console.WriteLine("Attempt {0} failed, please try again", count);
                 }
             }
 
-            /// <summary>
-            /// get input number from user and showing table of number till you reach the input number table
-            /// </summary>
-            static void DisplayTableTillGivenValue()
+            while (pinbyuser != actualpin && count < 3);
+            if (pinbyuser == actualpin)
             {
-                int num = int.Parse(Console.ReadLine());
-                for (int a = 1; a <= num; a++)
-                {
-
-                    for (int i = 1; i <= 10; i++)
-                    {
-                        int result = i * a;
-                        Console.WriteLine("{0} * {1} = {2}", a, i, result);
-                    }
-                    Console.WriteLine("--------------");
-                }
+                Console.WriteLine("Welcome User");
             }
-
-            /// <summary>
-            /// calculating number of digits from given number from user
-            /// </summary>
-            static void CalculateDigits()
+            else
             {
-                int a = int.Parse(Console.ReadLine());
-                int temp = a;
-                int digit = 0;
-
-                while (temp != 0)
-                {
-                    temp = temp / 10;
-                    digit++;
-                }
-                Console.WriteLine("{0} is {1} digit number", a, digit);
+                Console.WriteLine("Account Block");
             }
+        }
 
-            /// <summary>
-            /// accept only three attempts of input pin from user or else block the account
-            /// </summary>
-            static void LimitPinAttempts()
+        /// <summary>
+        /// fizz buzz program in which multiple of 3,5 will be displayed fizz and buzz respectively and number which is multiple of both will be displayed as fizzbuzz
+        /// </summary>
+        static void FizzBuzzProgramType1()
+        {
+            for (int i = 1; i <= 100; i++)
             {
-                string actualpin = "1234";
-                string pinbyuser;
-                int count = 0;
-
-                do
+                if (i % 15 == 0)
                 {
-                    pinbyuser = Console.ReadLine();
-                    count++;
+                    Console.WriteLine("FizzBuzz");
+                    continue;
                 }
-                while (pinbyuser != actualpin && count < 3);
-
-                if (pinbyuser == actualpin)
+                else if (i % 5 == 0)
                 {
-                    Console.WriteLine("Welcome User");
+                    Console.WriteLine("Buzz");
+                    continue;
+                }
+                else if (i % 3 == 0)
+                {
+                    Console.WriteLine("Fizz");
+                    continue;
                 }
                 else
                 {
-                    Console.WriteLine("Account Block");
+                    Console.WriteLine(i);
                 }
             }
+        }
 
-            /// <summary>
-            /// accept only three attempts of input pin from user, show the number of failed attempts and after 3 attempts block the account
-            /// </summary>
-            static void RetryPinAttempts()
+        /// <summary>
+        /// getting grades in terms of A,B,C,D out of the program by passing 3 values of marks
+        /// </summary>
+        /// <returns></returns>
+        static float GetTotal()
+        {
+            Console.Write("Enter marks 1 ");
+            float marks1 = float.Parse(Console.ReadLine());
+
+            Console.Write("Enter marks 2 ");
+            float marks2 = float.Parse(Console.ReadLine());
+
+            Console.Write("Enter marks 3 ");
+            float marks3 = float.Parse(Console.ReadLine());
+
+            float total = marks1 + marks2 + marks3;
+            return total;
+        }
+
+        static float GetPercentage()
+        {
+            float totalmarks = GetTotal();
+            float percentage = totalmarks * 100 / 300;
+            return percentage;
+        }
+
+        static char GettingGrade()
+        {
+            float percent = GetPercentage();
+            if (percent >= 80)
             {
-                string actualpin = "9876";
-                string pinbyuser;
-                int count = 0;
-
-                do
-                {
-                    pinbyuser = Console.ReadLine();
-                    count++;
-                    if (pinbyuser != actualpin)
-                    {
-                        Console.WriteLine("Attempt {0} failed, please try again", count);
-                    }
-                }
-
-                while (pinbyuser != actualpin && count < 3);
-                if (pinbyuser == actualpin)
-                {
-                    Console.WriteLine("Welcome User");
-                }
-                else
-                {
-                    Console.WriteLine("Account Block");
-                }
+                return 'A';
             }
-
-            /// <summary>
-            /// fizz buzz program in which multiple of 3,5 will be displayed fizz and buzz respectively and number which is multiple of both will be displayed as fizzbuzz
-            /// </summary>
-            static void FizzBuzzProgramType1()
+            else if (percent >= 60)
             {
-                for (int i = 1; i <= 100; i++)
-                {
-                    if (i % 15 == 0)
-                    {
-                        Console.WriteLine("FizzBuzz");
-                        continue;
-                    }
-                    else if (i % 5 == 0)
-                    {
-                        Console.WriteLine("Buzz");
-                        continue;
-                    }
-                    else if (i % 3 == 0)
-                    {
-                        Console.WriteLine("Fizz");
-                        continue;
-                    }
-                    else
-                    {
-                        Console.WriteLine(i);
-                    }
-                }
+                return 'B';
             }
-
-            /// <summary>
-            /// getting grades in terms of A,B,C,D out of the program by passing 3 values of marks
-            /// </summary>
-            /// <returns></returns>
-            static float GetTotal()
+            else if (percent >= 40)
             {
-                Console.Write("Enter marks 1 ");
-                float marks1 = float.Parse(Console.ReadLine());
-
-                Console.Write("Enter marks 2 ");
-                float marks2 = float.Parse(Console.ReadLine());
-
-                Console.Write("Enter marks 3 ");
-                float marks3 = float.Parse(Console.ReadLine());
-
-                float total = marks1 + marks2 + marks3;
-                return total;
+                return 'C';
             }
-
-            static float GetPercentage()
+            else
             {
-                float totalmarks = GetTotal();
-                float percentage = totalmarks * 100 / 300;
-                return percentage;
+                return 'D';
             }
+        }
 
-            static char GettingGrade()
+        static void DisplayTriangle()
+        {
+            for(int i = 5; i > 0; i--)
             {
-                float percent = GetPercentage();
-                if (percent >= 80)
-                {
-                    return 'A';
-                }
-                else if (percent >= 60)
-                {
-                    return 'B';
-                }
-                else if (percent >= 40)
-                {
-                    return 'C';
-                }
-                else
-                {
-                    return 'D';
-                }
+                Console.WriteLine(i);
             }
-
+            
+        }
     }
 }
 
