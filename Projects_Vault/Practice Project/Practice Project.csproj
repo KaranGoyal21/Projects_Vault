@@ -6,4 +6,8 @@
     <RootNamespace>Practice_Project</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Compile Remove="Program.cs" />
+  </ItemGroup>
+
 </Project>

@@ -57,8 +57,11 @@ namespace Practice_Project
 
             Console.WriteLine("Grade : " + GettingGrade());
 
-            DisplayTriangle();
+            DisplayAscendingTriangle();
+
+            DisplayDescendingTriangle();
             */
+
         }
 
         /// <summary>
@@ -646,14 +649,30 @@ namespace Practice_Project
             }
         }
 
-        static void DisplayTriangle()
+        static void DisplayAscendingTriangle()
         {
-            for(int i = 5; i > 0; i--)
+            for (int j = 1; j <= 9; j++)
             {
-                Console.WriteLine(i);
+                Console.WriteLine();
+                for (int i = j; i >= 1; i--)
+                {
+                    Console.Write(i);
+                }
             }
-            
         }
+
+        static void DisplayDescendingTriangle()
+        {
+            for (int j = 1; j <= 9; j++)
+            {
+                Console.WriteLine();
+                for (int i = j; i <= 9; i++)
+                {
+                    Console.Write(i);
+                }
+            }
+        }
+
     }
 }
 
