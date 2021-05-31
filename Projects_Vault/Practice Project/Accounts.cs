@@ -8,6 +8,9 @@ namespace Practice_Project
 {
     class Accounts
     {
+        /// <summary>
+        /// Practice properties concept in which we pass parameters using getter and setter accessors and keeping interest rate property to private setter.
+        /// </summary>
         float init_amount;
         static float interest;
 
