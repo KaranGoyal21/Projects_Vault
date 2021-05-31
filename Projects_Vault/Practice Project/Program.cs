@@ -35,7 +35,7 @@ namespace Practice_Project
 
             CheckprimeValueType2();
 
-            CheckprimeValueType3();
+            ShowPrimeValues();
 
             First100PrimeNumbers();
 
@@ -61,7 +61,7 @@ namespace Practice_Project
 
             DisplayDescendingTriangle();
             */
-
+            
         }
 
         /// <summary>
@@ -376,9 +376,9 @@ namespace Practice_Project
         }
 
         /// <summary>
-        /// get inputs form user and showcase whether it is a prime number or not using while condition
+        /// get input number form user and showcase that number of prime numbers using while condition
         /// </summary>
-        static void CheckprimeValueType3()
+        static void ShowPrimeValues()
         {
             bool isprime = true;
             int count = 0;
@@ -667,6 +667,18 @@ namespace Practice_Project
             {
                 Console.WriteLine();
                 for (int i = j; i <= 9; i++)
+                {
+                    Console.Write(i);
+                }
+            }
+        }
+
+        static void DisplayPyramid()
+        {
+            for (int j = 1; j <= 9; j++)
+            {
+                Console.WriteLine();
+                for (int i = j; i >= 1; i--)
                 {
                     Console.Write(i);
                 }

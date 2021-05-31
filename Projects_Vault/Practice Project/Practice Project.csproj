@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <Compile Remove="Program.cs" />
+    <Compile Remove="Testing.cs" />
   </ItemGroup>
 
 </Project>

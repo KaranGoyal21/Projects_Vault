@@ -22,8 +22,8 @@ namespace Practice_Project
             Testing t2 = new Testing(35); //Instantiating class in t2 and calculating percentage using parameterised constructor
             t2.CalculatePercent();
             Testing t3 = new Testing(t2); //Instantiating class in t3 and calculating percentage using copy constructor
-            t3.CalculatePercent();  //Object initializer
-            Testing t4 = new Testing { marks = 10 };
+            t3.CalculatePercent();
+            Testing t4 = new Testing { marks = 10 };  //Object initializer
             t4.CalculatePercent();
 
         }
