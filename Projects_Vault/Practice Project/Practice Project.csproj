@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <Compile Remove="Accounts.cs" />
+    <Compile Remove="Employee.cs" />
     <Compile Remove="Length.cs" />
     <Compile Remove="Program.cs" />
     <Compile Remove="Testing.cs" />
