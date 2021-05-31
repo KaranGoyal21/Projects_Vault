@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Practice_Project
 {
-    class Length
+    public class Length
     {
         static void Main (string[] args)
         {
@@ -21,10 +21,11 @@ namespace Practice_Project
             {
                 Console.WriteLine("Len2 is greater");
             }
-
+            Length len4 = new Length();
             Console.WriteLine(len1.GetLength());
             Console.WriteLine(len2.GetLength());
             Console.WriteLine("Total : "+len3.GetLength());
+            Console.WriteLine(len4.GetLength(15, 16)); //Invoke method and overload inputs while invoking
         }
 
         int feet, inch;
@@ -81,7 +82,12 @@ namespace Practice_Project
             else
                 return false;
         }
-        string GetLength()
+        public string GetLength()    //Default Method overloading
+        {
+            return string.Format("Length :{0}' {1}\"", feet, inch);
+        }
+
+        public string GetLength(int feet, int inch)    //Parameterised Method overloading
         {
             return string.Format("Length :{0}' {1}\"", feet, inch);
         }
