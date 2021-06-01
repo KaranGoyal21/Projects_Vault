@@ -12,11 +12,11 @@
     <Compile Remove="ConstructorConceptTestingExample.cs" />
     <Compile Remove="DataHidingEmployeeExample.cs" />
     <Compile Remove="Fundamentals Program.cs" />
-    <Compile Remove="FundamentalsProgramBasicExamples.cs" />
     <Compile Remove="Indexer concept - Employee.cs" />
     <Compile Remove="IndexerConceptEmployeeExample.cs" />
     <Compile Remove="Inheritance concept.cs" />
     <Compile Remove="InheritanceConceptTwoClassesExample.cs" />
+    <Compile Remove="InterfaceConcept.cs" />
     <Compile Remove="MethodOverridingEmployeeExample.cs" />
     <Compile Remove="Overloading concept - Length.cs" />
     <Compile Remove="OverloadingConceptLengthExample.cs" />

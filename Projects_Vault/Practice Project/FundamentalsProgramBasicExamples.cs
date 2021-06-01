@@ -41,6 +41,8 @@ namespace Practice_Project
 
             PrintEvenOddPrimeNonPrimeArrayValuesWithIndexNumber();
 
+            FizzBuzzProgramType1();
+
             DisplayTable();
 
             DisplayTableTillGivenValue();
@@ -51,8 +53,6 @@ namespace Practice_Project
 
             RetryPinAttempts();
 
-            FizzBuzzProgramType1();
-
             GettingGrade();
 
             Console.WriteLine("Grade : " + GettingGrade());
@@ -61,7 +61,7 @@ namespace Practice_Project
 
             DisplayDescendingTriangle();
             */
-            
+
         }
 
         /// <summary>
@@ -470,6 +470,35 @@ namespace Practice_Project
         }
 
         /// <summary>
+        /// fizz buzz program in which multiple of 3,5 will be displayed fizz and buzz respectively and number which is multiple of both will be displayed as fizzbuzz
+        /// </summary>
+        static void FizzBuzzProgramType1()
+        {
+            for (int i = 1; i <= 100; i++)
+            {
+                if (i % 15 == 0)
+                {
+                    Console.WriteLine("FizzBuzz");
+                    continue;
+                }
+                else if (i % 5 == 0)
+                {
+                    Console.WriteLine("Buzz");
+                    continue;
+                }
+                else if (i % 3 == 0)
+                {
+                    Console.WriteLine("Fizz");
+                    continue;
+                }
+                else
+                {
+                    Console.WriteLine(i);
+                }
+            }
+        }
+
+        /// <summary>
         /// get input number from user and showing table of that number till 10 values
         /// </summary>
         static void DisplayTable()
@@ -570,35 +599,6 @@ namespace Practice_Project
             else
             {
                 Console.WriteLine("Account Block");
-            }
-        }
-
-        /// <summary>
-        /// fizz buzz program in which multiple of 3,5 will be displayed fizz and buzz respectively and number which is multiple of both will be displayed as fizzbuzz
-        /// </summary>
-        static void FizzBuzzProgramType1()
-        {
-            for (int i = 1; i <= 100; i++)
-            {
-                if (i % 15 == 0)
-                {
-                    Console.WriteLine("FizzBuzz");
-                    continue;
-                }
-                else if (i % 5 == 0)
-                {
-                    Console.WriteLine("Buzz");
-                    continue;
-                }
-                else if (i % 3 == 0)
-                {
-                    Console.WriteLine("Fizz");
-                    continue;
-                }
-                else
-                {
-                    Console.WriteLine(i);
-                }
             }
         }
 
