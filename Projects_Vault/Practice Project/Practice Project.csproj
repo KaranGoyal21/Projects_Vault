@@ -9,6 +9,7 @@
   <ItemGroup>
     <Compile Remove="Constructor concept - Testing.cs" />
     <Compile Remove="ConstructorConceptTestingExample.cs" />
+    <Compile Remove="DataHidingEmployeeExample.cs" />
     <Compile Remove="Fundamentals Program.cs" />
     <Compile Remove="FundamentalsProgramBasicExamples.cs" />
     <Compile Remove="Indexer concept - Employee.cs" />
