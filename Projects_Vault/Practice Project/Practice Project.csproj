@@ -16,6 +16,7 @@
     <Compile Remove="IndexerConceptEmployeeExample.cs" />
     <Compile Remove="Inheritance concept.cs" />
     <Compile Remove="InheritanceConceptTwoClassesExample.cs" />
+    <Compile Remove="MethodOverridingEmployeeExample.cs" />
     <Compile Remove="Overloading concept - Length.cs" />
     <Compile Remove="OverloadingConceptLengthExample.cs" />
     <Compile Remove="Program.cs" />
