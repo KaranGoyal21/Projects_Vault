@@ -8,12 +8,18 @@
 
   <ItemGroup>
     <Compile Remove="Constructor concept - Testing.cs" />
+    <Compile Remove="ConstructorConceptTestingExample.cs" />
     <Compile Remove="Fundamentals Program.cs" />
+    <Compile Remove="FundamentalsProgramBasicExamples.cs" />
     <Compile Remove="Indexer concept - Employee.cs" />
+    <Compile Remove="IndexerConceptEmployeeExample.cs" />
     <Compile Remove="Inheritance concept.cs" />
+    <Compile Remove="InheritanceConceptTwoClassesExample.cs" />
     <Compile Remove="Overloading concept - Length.cs" />
+    <Compile Remove="OverloadingConceptLengthExample.cs" />
     <Compile Remove="Program.cs" />
     <Compile Remove="Properties concept - Accounts.cs" />
+    <Compile Remove="PropertiesConceptAccountsExample.cs" />
     <Compile Remove="Testing.cs" />
   </ItemGroup>
 
