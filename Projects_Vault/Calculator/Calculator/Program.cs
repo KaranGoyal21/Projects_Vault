@@ -8,7 +8,7 @@ namespace Calculator
 
         static void Main(string[] args)
         {
-            string continueCalculator = "";
+            char continueCalculator;
             CalculatorLogic c = new CalculatorLogic();
 
             do
@@ -42,10 +42,10 @@ namespace Calculator
                 }
 
                 ContinueOperation();
-                continueCalculator = Console.ReadLine().ToLower();
+                continueCalculator = Convert.ToChar(Console.ReadLine().ToLower());
                 
 
-            } while (continueCalculator == "y");
+            } while (continueCalculator == 'y');
 
         }
 

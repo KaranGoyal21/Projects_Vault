@@ -7,10 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Accounts.cs" />
-    <Compile Remove="Employee.cs" />
-    <Compile Remove="Length.cs" />
+    <Compile Remove="Constructor concept - Testing.cs" />
+    <Compile Remove="Fundamentals Program.cs" />
+    <Compile Remove="Indexer concept - Employee.cs" />
+    <Compile Remove="Inheritance concept.cs" />
+    <Compile Remove="Overloading concept - Length.cs" />
     <Compile Remove="Program.cs" />
+    <Compile Remove="Properties concept - Accounts.cs" />
     <Compile Remove="Testing.cs" />
   </ItemGroup>
 

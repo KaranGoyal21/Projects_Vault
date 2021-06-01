@@ -6,6 +6,12 @@ using System.Threading.Tasks;
 
 namespace Practice_Project
 {
+    /// <summary>
+    /// Using length class understanding overloading concept in depth.
+    /// Constructor, Operator and Method overloading are done.
+    /// Operator overloading done when two user defined instance of object are operated to each other.
+    /// In that case we need to define the operator functionality and overload the existing operators.
+    /// </summary>
     public class Length
     {
         static void Main (string[] args)

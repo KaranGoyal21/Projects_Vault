@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Practice_Project
 {
+    /// <summary>
+    /// Indexer Concept using department and employee class. Department class has an employee array list which is retrieved using get accesor.
+    /// </summary>
     class Employee
     {
         public int Id { get; set; }
@@ -30,6 +33,8 @@ namespace Practice_Project
             };
         }
 
+        // Using method type to retrieve data
+        /*
         public Employee GetEmployee(int id)
         {
             foreach (Employee emp in EmpList)
@@ -49,6 +54,7 @@ namespace Practice_Project
             }
             return null;
         }
+        */
 
         public Employee this[int id]
         {

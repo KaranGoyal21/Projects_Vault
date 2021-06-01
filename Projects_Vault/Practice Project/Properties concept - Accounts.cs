@@ -6,13 +6,26 @@ using System.Threading.Tasks;
 
 namespace Practice_Project
 {
+    /// <summary>
+    /// Practice properties concept in which we pass parameters using getter and setter accessors while keeping interest rate property to private setter.
+    /// </summary>
+    public class ProgramForAccounts
+    {
+        static void Main(string[] args)
+        {
+            //Accounts ac1 = new Accounts();
+            //ac1.InitialAmount = 500;
+            Accounts ac2 = new Accounts(5000);
+            //Accounts.InterestRate = 10;
+            Console.WriteLine(ac2.InitialAmount);
+            Console.WriteLine(Accounts.InterestRate);
+        }
+
+    }
     class Accounts
     {
-        /// <summary>
-        /// Practice properties concept in which we pass parameters using getter and setter accessors and keeping interest rate property to private setter.
-        /// </summary>
-        float init_amount;
-        static float interest;
+        private float init_amount;
+        private static float interest;
 
         public float InitialAmount 
         {
@@ -20,7 +33,7 @@ namespace Practice_Project
             {
                 if(value < 1000)
                 {
-                    Console.WriteLine("Initial amount cannot be less than zero");
+                    Console.WriteLine("Initial amount cannot be less than thousand");
                     return;
                 }
                 init_amount = value;
@@ -57,14 +70,5 @@ namespace Practice_Project
             Accounts.InterestRate = 9.5f;
         }
 
-        static void Main(string[] args)
-        {
-            //Accounts ac1 = new Accounts();
-            //ac1.InitialAmount = 500;
-            Accounts ac2 = new Accounts(5000);
-            Accounts.InterestRate = 10;
-            Console.WriteLine(ac2.InitialAmount);
-            Console.WriteLine(Accounts.InterestRate);
-        }
     }
 }

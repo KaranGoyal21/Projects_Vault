@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace Practice_Project
 {
-    class MyClass1
+    /// <summary>
+    /// Creating base class and derived class. Inheritance is used to showcase relation between two of them.
+    /// </summary>
+    class MyClass1 // Base class
     {
         public MyClass1()
         {
@@ -25,19 +28,23 @@ namespace Practice_Project
             Console.WriteLine("Method1 from Myclass1");
         }
     }
-    class MyClass2 : MyClass1
+    class MyClass2 : MyClass1 // Derived class
     {
         public MyClass2()
         {
             Console.WriteLine("MyClass2 Default Constructor");
         }
-        public MyClass2(int b) : base(b)
+        public MyClass2(int b) : base(b) // Parameterised constructor inrelation with base class which will take the same value as derived class object.
         {
             Console.WriteLine("MyClass2 Parameterized Constructor");
         }
         static MyClass2()
         {
             Console.WriteLine("MyClass2 Static Constructor");
+        }
+        public new void Method1() // Data hiding concept is used to hide the method 1 used in class1 or base class.
+        {
+            Console.WriteLine("Method1 from Myclass1");
         }
         public void Method2()
         {
