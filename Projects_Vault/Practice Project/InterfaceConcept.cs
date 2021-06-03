@@ -31,7 +31,7 @@ namespace Practice_Project
         {
             Console.WriteLine("Method 1");
         }
-        /*public void Method2()//Implicite implementation of interface
+        /*public void Method2()//Implicit implementation of interface
         {
             Console.WriteLine("Method 2");
         }*/

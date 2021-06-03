@@ -54,14 +54,12 @@ namespace Practice_Project
             RetryPinAttempts();
 
             GettingGrade();
-
             Console.WriteLine("Grade : " + GettingGrade());
 
             DisplayAscendingTriangle();
 
             DisplayDescendingTriangle();
             */
-
         }
 
         /// <summary>
@@ -380,14 +378,13 @@ namespace Practice_Project
         /// </summary>
         static void ShowPrimeValues()
         {
-            bool isprime = true;
             int count = 0;
             int num = 1;
             int userinput = int.Parse(Console.ReadLine());
 
             while (count < userinput)
             {
-                isprime = true;
+                bool isprime = true;
                 for (int a = 2; a < num; a++)
                 {
                     if (num % a == 0)
@@ -579,19 +576,19 @@ namespace Practice_Project
         {
             string actualpin = "9876";
             string pinbyuser;
-            int count = 0;
+            int count = 1;
 
             do
             {
                 pinbyuser = Console.ReadLine();
-                count++;
                 if (pinbyuser != actualpin)
                 {
                     Console.WriteLine("Attempt {0} failed, please try again", count);
                 }
+                count++;
             }
+            while (pinbyuser != actualpin && count <= 3);
 
-            while (pinbyuser != actualpin && count < 3);
             if (pinbyuser == actualpin)
             {
                 Console.WriteLine("Welcome User");
