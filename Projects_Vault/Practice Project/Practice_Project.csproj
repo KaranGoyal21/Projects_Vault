@@ -11,6 +11,7 @@
     <Compile Remove="Constructor concept - Testing.cs" />
     <Compile Remove="ConstructorConceptTestingExample.cs" />
     <Compile Remove="DataHidingEmployeeExample.cs" />
+    <Compile Remove="DelegateConcept.cs" />
     <Compile Remove="EnumConcept.cs" />
     <Compile Remove="Fundamentals Program.cs" />
     <Compile Remove="FundamentalsProgramBasicExamples.cs" />
