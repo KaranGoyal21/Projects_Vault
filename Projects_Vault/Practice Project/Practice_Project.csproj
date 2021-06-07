@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <Compile Remove="AbstractConceptEmployeeExample.cs" />
+    <Compile Remove="AnonymousMethodConcept.cs" />
     <Compile Remove="Constructor concept - Testing.cs" />
     <Compile Remove="ConstructorConceptTestingExample.cs" />
     <Compile Remove="DataHidingEmployeeExample.cs" />
