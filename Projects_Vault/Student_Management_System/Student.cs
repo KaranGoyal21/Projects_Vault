@@ -1,7 +1,20 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Student_Management_System
 {
+    enum Subject
+    {
+        History = 1,
+        Geography = 2,
+        Maths = 3,
+        Hindi = 4,
+        Marathi = 5,
+        English = 6,
+        German = 7,
+        Science = 8
+    }
+
     class Student
     {
         public int Standard { get; set; }
@@ -10,11 +23,12 @@ namespace Student_Management_System
         public int Age { get; set; }
         public double Height { get; set; }
         public string Address { get; set; }
+        public List<Subject> SubjectList { get; set; }
 
         public Student()
         { }
 
-        public Student(int a, int b, string c, int d, double e, string f)
+        public Student(int a, int b, string c, int d, double e, string f, List<Subject> subjects)
         {
             this.Standard = a;
             this.RollNo = b;
@@ -22,6 +36,7 @@ namespace Student_Management_System
             this.Age = d;
             this.Height = e;
             this.Address = f;
+            this.SubjectList = subjects;
         }
 
         public Student(string a, int b, int c)

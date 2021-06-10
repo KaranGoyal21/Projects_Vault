@@ -49,9 +49,9 @@ namespace Practice_Project
         static void Main(string[] args)
         {
             MyClass2 m2 = new MyClass2();
-            IInterface1 i1 = new MyClass2();
+            IInterface1 i1 = (IInterface1)m2;
             i1.Method2();
-            IInterface2 i2 = new MyClass2();
+            IInterface2 i2 = (IInterface2)m2;
             i2.Method2();
         }
     }

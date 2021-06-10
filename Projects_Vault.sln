@@ -7,8 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practice_Project", "Project
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calculator", "Projects_Vault\Calculator\Calculator\Calculator.csproj", "{113B69B2-F37A-4DE5-AC50-2E358B9742EB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Student_Management_System", "Projects_Vault\Student_Management_System\Student_Management_System.csproj", "{F893B396-B7F5-4CD0-B5DE-5136133E3D0E}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,10 +21,6 @@ Global
 		{113B69B2-F37A-4DE5-AC50-2E358B9742EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{113B69B2-F37A-4DE5-AC50-2E358B9742EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{113B69B2-F37A-4DE5-AC50-2E358B9742EB}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F893B396-B7F5-4CD0-B5DE-5136133E3D0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F893B396-B7F5-4CD0-B5DE-5136133E3D0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F893B396-B7F5-4CD0-B5DE-5136133E3D0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F893B396-B7F5-4CD0-B5DE-5136133E3D0E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

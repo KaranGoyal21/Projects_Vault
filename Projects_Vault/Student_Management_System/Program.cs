@@ -34,7 +34,7 @@ namespace Student_Management_System
         {
             foreach(var data in stuList)
             {
-                Console.WriteLine("Standard = {0} \t Roll no = {1} \t Name = {2} \t Age = {3} \t Height = {4} \t Address = {5}",data.Standard,data.RollNo,data.Name,data.Age,data.Height,data.Address);
+                Console.WriteLine("Standard = {0} \t Roll no = {1} \t Name = {2} \t Age = {3} \t Height = {4} \t Address = {5} \t Subjects = {6}",data.Standard,data.RollNo,data.Name,data.Age,data.Height,data.Address,data.SubjectList);
             }
         }
 

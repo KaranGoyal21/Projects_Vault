@@ -18,14 +18,15 @@ namespace Practice_Project
     {
         static void Main(string[] args)
         {
-            structure1 MyStructure1 = new structure1();
-            MyStructure1.Val = 10;
+            structure1 var1 = new structure1();
+            var1.Val = 10;
 
-            structure1 MyStructure2 = MyStructure1;
-            Console.WriteLine(MyStructure2.Val);
+            structure1 var2 = var1;
+            Console.WriteLine(var2.Val);
 
-            MyStructure1.Val = 15;
-            Console.WriteLine(MyStructure2.Val);
+            var1.Val = 15;
+            Console.WriteLine(var1.Val);
+            Console.WriteLine(var2.Val);
         }
     }
 }
