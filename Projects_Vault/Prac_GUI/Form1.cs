@@ -47,5 +47,64 @@ namespace Prac_GUI
         {
 
         }
+
+        private void label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                float num1 = float.Parse(textBox4.Text);
+                float num2 = float.Parse(textBox3.Text);
+
+                if (num1 == 0)
+                    throw new MyCustomException("Number cannot be zero");//Custom exception reference
+
+                if (num2 == 0)
+                    throw new DivideByZeroException();
+                float result = num1 / num2;
+                label7.Text = result.ToString();
+            }
+            catch (DivideByZeroException)
+            {
+                label7.Text = "Cannot divide by zeo";
+            }
+            catch (FormatException)
+            {
+                //label7.Text = "Please enter only decimal numbers";
+                label7.Text = "Please enter only numbers";
+            }
+            catch (Exception ex)
+            {
+                label7.Text = ex.GetType() + " : " + ex.Message;
+            }
+            finally
+            {
+
+            }
+        }
+
+        private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
