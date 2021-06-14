@@ -42,5 +42,10 @@ namespace Prac_GUI
         {
             button3.Enabled = checkBox1.Checked;
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
