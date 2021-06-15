@@ -18,6 +18,7 @@
     <Compile Remove="Fundamentals Program.cs" />
     <Compile Remove="FundamentalsProgramBasicExamples.cs" />
     <Compile Remove="GenericClassConcept.cs" />
+    <Compile Remove="GenericCollectionConcept.cs" />
     <Compile Remove="GenericDelegates.cs" />
     <Compile Remove="Indexer concept - Employee.cs" />
     <Compile Remove="IndexerConceptEmployeeExample.cs" />
