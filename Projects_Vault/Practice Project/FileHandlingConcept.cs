@@ -60,6 +60,7 @@ namespace Practice_Project
                     {
                         Console.WriteLine(str);
                     }
+                    reader.Close();
                 }
             }
         }
