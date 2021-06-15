@@ -15,6 +15,7 @@
     <Compile Remove="DataHidingEmployeeExample.cs" />
     <Compile Remove="DelegateConcept.cs" />
     <Compile Remove="EnumConcept.cs" />
+    <Compile Remove="FileHandlingConcept.cs" />
     <Compile Remove="Fundamentals Program.cs" />
     <Compile Remove="FundamentalsProgramBasicExamples.cs" />
     <Compile Remove="GenericClassConcept.cs" />
