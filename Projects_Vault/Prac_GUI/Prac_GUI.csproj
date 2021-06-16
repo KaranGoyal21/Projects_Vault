@@ -7,6 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="CollectionConcept.cs" />
+    <Compile Remove="CollectionConcept.Designer.cs" />
     <Compile Remove="Form1.cs" />
     <Compile Remove="Form1.Designer.cs" />
     <Compile Remove="MyCustomException.cs" />
@@ -15,8 +17,15 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Remove="CollectionConcept.resx" />
     <EmbeddedResource Remove="Form1.resx" />
     <EmbeddedResource Remove="RegularExpression.resx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="GenericCollectionConcept.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 
 </Project>

@@ -19,7 +19,8 @@ namespace Prac_GUI
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Form1());
             //Application.Run(new RegularExpression());
-            Application.Run(new CollectionConcept());
+            //Application.Run(new CollectionConcept());
+            Application.Run(new GenericCollectionConcept());
         }
     }
 }
