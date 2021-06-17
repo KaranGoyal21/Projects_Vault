@@ -9,8 +9,9 @@
   <ItemGroup>
     <Compile Remove="CollectionConcept.cs" />
     <Compile Remove="CollectionConcept.Designer.cs" />
+    <Compile Remove="ExceptionHandling.cs" />
+    <Compile Remove="ExceptionHandling.Designer.cs" />
     <Compile Remove="Form1.cs" />
-    <Compile Remove="Form1.Designer.cs" />
     <Compile Remove="MyCustomException.cs" />
     <Compile Remove="RegularExpression.cs" />
     <Compile Remove="RegularExpression.Designer.cs" />
@@ -18,7 +19,7 @@
 
   <ItemGroup>
     <EmbeddedResource Remove="CollectionConcept.resx" />
-    <EmbeddedResource Remove="Form1.resx" />
+    <EmbeddedResource Remove="ExceptionHandling.resx" />
     <EmbeddedResource Remove="RegularExpression.resx" />
   </ItemGroup>
 

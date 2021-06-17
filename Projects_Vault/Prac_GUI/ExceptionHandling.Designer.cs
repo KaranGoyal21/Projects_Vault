@@ -1,7 +1,7 @@
 ﻿
 namespace Prac_GUI
 {
-    partial class Form1
+    partial class ExceptionHandling
     {
         /// <summary>
         ///  Required designer variable.
