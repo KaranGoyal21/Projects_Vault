@@ -20,7 +20,7 @@ namespace Prac_GUI
             //Application.Run(new ExceptionHandling());
             //Application.Run(new RegularExpression());
             //Application.Run(new CollectionConcept());
-            Application.Run(new GenericCollectionConcept());
+            //Application.Run(new GenericCollectionConcept());
         }
     }
 }
