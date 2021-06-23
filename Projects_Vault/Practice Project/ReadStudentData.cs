@@ -11,7 +11,7 @@ namespace Practice_Project
     {
         public static void ReadDataInsideFile()
         {
-            FileInfo data = new FileInfo(@"D:\study\projects\Projects_Vault\Projects_Vault\Practice Project\file_handling\data.txt");
+            FileInfo data = new FileInfo(@"E:\study\study\projects\Projects_Vault\Projects_Vault\Practice Project\file_handling\data.txt");
             if (data.Exists)
             {
                 StreamReader reader = data.OpenText();
@@ -27,11 +27,11 @@ namespace Practice_Project
             {
                 Console.WriteLine("File does not exist");
             }
-        }
+        } 
 
         public static void WriteDataInsideFile()
         {
-            FileInfo data = new FileInfo(@"D:\study\projects\Projects_Vault\Projects_Vault\Practice Project\file_handling\data.txt");
+            FileInfo data = new FileInfo(@"E:\study\study\projects\Projects_Vault\Projects_Vault\Practice Project\file_handling\data.txt");
             if (data.Exists)
             {
                 StreamWriter write = data.AppendText();
