@@ -27,9 +27,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="Practice_Project">
-      <HintPath>..\Practice Project\bin\Debug\net5.0\ref\Practice_Project.dll</HintPath>
-    </Reference>
+    <ProjectReference Include="..\AssemblyConceptManageUser\AssemblyConceptManageUser.csproj" />
   </ItemGroup>
 
 </Project>

@@ -15,6 +15,10 @@ namespace AssemblyConceptManageUser
 
     public class User
     {
+        static void Main(string[] args)
+        {
+
+        }
         public string HelloUser(string user)
         {
             return "Hello" + user;
@@ -27,8 +31,6 @@ namespace AssemblyConceptManageUser
             else
                 return false;
         }
-        static void Main(string[] args)
-        {
-        }
 
     }
+}
