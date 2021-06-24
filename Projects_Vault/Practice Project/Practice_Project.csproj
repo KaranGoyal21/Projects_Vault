@@ -37,6 +37,7 @@
     <Compile Remove="Properties concept - Accounts.cs" />
     <Compile Remove="PropertiesConceptAccountsExample.cs" />
     <Compile Remove="ReadStudentData.cs" />
+    <Compile Remove="ReflectionConcept.cs" />
     <Compile Remove="SealedClassConcept.cs" />
     <Compile Remove="StructureConcept.cs" />
     <Compile Remove="Testing.cs" />
