@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Practice_Project", "Project
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calculator", "Projects_Vault\Calculator\Calculator\Calculator.csproj", "{113B69B2-F37A-4DE5-AC50-2E358B9742EB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Prac_GUI", "Projects_Vault\Prac_GUI\Prac_GUI.csproj", "{2F28E252-B05D-4DCF-9ECB-7A31D10E52C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prac_GUI", "Projects_Vault\Prac_GUI\Prac_GUI.csproj", "{2F28E252-B05D-4DCF-9ECB-7A31D10E52C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AssemblyConceptManageUser", "Projects_Vault\AssemblyConceptManageUser\AssemblyConceptManageUser.csproj", "{A940A6E3-75CE-43E5-B276-FF1C3CF9B1B4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{2F28E252-B05D-4DCF-9ECB-7A31D10E52C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F28E252-B05D-4DCF-9ECB-7A31D10E52C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F28E252-B05D-4DCF-9ECB-7A31D10E52C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A940A6E3-75CE-43E5-B276-FF1C3CF9B1B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A940A6E3-75CE-43E5-B276-FF1C3CF9B1B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A940A6E3-75CE-43E5-B276-FF1C3CF9B1B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A940A6E3-75CE-43E5-B276-FF1C3CF9B1B4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
