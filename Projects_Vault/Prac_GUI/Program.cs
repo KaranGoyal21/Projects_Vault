@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Practice_Project;
 
 namespace Prac_GUI
 {
@@ -21,6 +22,7 @@ namespace Prac_GUI
             //Application.Run(new RegularExpression());
             //Application.Run(new CollectionConcept());
             //Application.Run(new GenericCollectionConcept());
+            Application.Run(new AssemblyConcept());
         }
     }
 }

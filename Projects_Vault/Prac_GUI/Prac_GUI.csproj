@@ -15,12 +15,21 @@
     <Compile Remove="GenericCollectionConcept.cs" />
     <Compile Remove="GenericCollectionConcept.Designer.cs" />
     <Compile Remove="MyCustomException.cs" />
+    <Compile Remove="RegularExpression.cs" />
+    <Compile Remove="RegularExpression.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Remove="CollectionConcept.resx" />
     <EmbeddedResource Remove="ExceptionHandling.resx" />
     <EmbeddedResource Remove="GenericCollectionConcept.resx" />
+    <EmbeddedResource Remove="RegularExpression.resx" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Practice_Project">
+      <HintPath>..\Practice Project\bin\Debug\net5.0\ref\Practice_Project.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
