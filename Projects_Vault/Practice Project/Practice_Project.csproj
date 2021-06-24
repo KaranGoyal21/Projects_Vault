@@ -9,6 +9,7 @@
   <ItemGroup>
     <Compile Remove="AbstractConceptEmployeeExample.cs" />
     <Compile Remove="AnonymousMethodConcept.cs" />
+    <Compile Remove="AttributeConcept.cs" />
     <Compile Remove="CollectionConcept.cs" />
     <Compile Remove="Constructor concept - Testing.cs" />
     <Compile Remove="ConstructorConceptTestingExample.cs" />
@@ -35,6 +36,7 @@
     <Compile Remove="Program.cs" />
     <Compile Remove="Properties concept - Accounts.cs" />
     <Compile Remove="PropertiesConceptAccountsExample.cs" />
+    <Compile Remove="ReadStudentData.cs" />
     <Compile Remove="SealedClassConcept.cs" />
     <Compile Remove="StructureConcept.cs" />
     <Compile Remove="Testing.cs" />
