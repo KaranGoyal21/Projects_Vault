@@ -41,6 +41,7 @@
     <Compile Remove="ReflectionConcept.cs" />
     <Compile Remove="SealedClassConcept.cs" />
     <Compile Remove="StructureConcept.cs" />
+    <Compile Remove="TaskParallelConcept.cs" />
     <Compile Remove="Testing.cs" />
   </ItemGroup>
 
