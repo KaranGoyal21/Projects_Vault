@@ -30,6 +30,7 @@
     <Compile Remove="InterfaceConcept.cs" />
     <Compile Remove="LambdaExpression.cs" />
     <Compile Remove="MethodOverridingEmployeeExample.cs" />
+    <Compile Remove="MultiThreading.cs" />
     <Compile Remove="Overloading concept - Length.cs" />
     <Compile Remove="OverloadingConceptLengthExample.cs" />
     <Compile Remove="PartialClassConcept.cs" />
