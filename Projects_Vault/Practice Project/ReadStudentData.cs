@@ -1,9 +1,5 @@
 ﻿using System;
 using System.IO;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Practice_Project
 {
@@ -11,7 +7,7 @@ namespace Practice_Project
     {
         public static void ReadDataInsideFile()
         {
-            FileInfo data = new FileInfo(@"E:\study\study\projects\Projects_Vault\Projects_Vault\Practice Project\file_handling\data.txt");
+            FileInfo data = new FileInfo(@$"{AppConstants.BaseDirectoryPath}\data.txt");
             if (data.Exists)
             {
                 StreamReader reader = data.OpenText();
@@ -31,7 +27,7 @@ namespace Practice_Project
 
         public static void WriteDataInsideFile()
         {
-            FileInfo data = new FileInfo(@"E:\study\study\projects\Projects_Vault\Projects_Vault\Practice Project\file_handling\data.txt");
+            FileInfo data = new FileInfo(@$"{AppConstants.BaseDirectoryPath}\data.txt");
             if (data.Exists)
             {
                 StreamWriter write = data.AppendText();

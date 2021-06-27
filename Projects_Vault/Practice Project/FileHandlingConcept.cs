@@ -1,9 +1,5 @@
 ﻿using System;
 using System.IO;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Practice_Project
 {
@@ -37,13 +33,13 @@ namespace Practice_Project
             /// </summary>
             public static void FileInfoHandle()
             {
-                FileInfo file = new FileInfo(@"D:\study\projects\Projects_Vault\Projects_Vault\Practice Project\file_handling\file.txt");
+                FileInfo file = new FileInfo(@$"{AppConstants.BaseDirectoryPath}\file.txt");
                 file.Create();
             }
 
             public static void SaveDataInsideFile()
             {
-                FileInfo file = new FileInfo(@"D:\study\projects\Projects_Vault\Projects_Vault\Practice Project\file_handling\myText.txt");
+                FileInfo file = new FileInfo(@$"{AppConstants.BaseDirectoryPath}\myText.txt");
                 StreamWriter writer = file.CreateText();
                 writer.WriteLine(Console.ReadLine());
                 writer.Close();
@@ -51,7 +47,7 @@ namespace Practice_Project
 
             public static void ReadDataInsideFile()
             {
-                FileInfo file = new FileInfo(@"D:\study\projects\Projects_Vault\Projects_Vault\Practice Project\file_handling\myText.txt");
+                FileInfo file = new FileInfo(@$"{AppConstants.BaseDirectoryPath}\myText.txt");
                 if (file.Exists)
                 {
                     StreamReader reader = file.OpenText();
