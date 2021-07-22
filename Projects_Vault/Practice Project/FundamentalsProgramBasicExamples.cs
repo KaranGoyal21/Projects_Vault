@@ -373,34 +373,6 @@ namespace Practice_Project
             }
         }
 
-        /// <summary>
-        /// get input number form user and showcase that number of prime numbers using while condition
-        /// </summary>
-        static void ShowPrimeValues()
-        {
-            int count = 0;
-            int num = 1;
-            int userinput = int.Parse(Console.ReadLine());
-
-            while (count < userinput)
-            {
-                bool isprime = true;
-                for (int a = 2; a < num; a++)
-                {
-                    if (num % a == 0)
-                    {
-                        isprime = false;
-                        break;
-                    }
-                }
-                if (isprime)
-                {
-                    Console.Write(num + "\t");
-                    count++;
-                }
-                num++;
-            }
-        }
 
         /// <summary>
         /// showcase first 100 prime numbers

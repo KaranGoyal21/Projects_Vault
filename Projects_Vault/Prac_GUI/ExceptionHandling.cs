@@ -85,7 +85,7 @@ namespace Prac_GUI
             }
             catch (DivideByZeroException)
             {
-                label7.Text = "Cannot divide by zeo";
+                label7.Text = "Cannot divide by zero";
             }
             catch (FormatException)
             {

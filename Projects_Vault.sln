@@ -11,7 +11,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Prac_GUI", "Projects_Vault\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AssemblyConceptManageUser", "Projects_Vault\AssemblyConceptManageUser\AssemblyConceptManageUser.csproj", "{A940A6E3-75CE-43E5-B276-FF1C3CF9B1B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BethanysPieShopHRM", "Projects_Vault\BethanysPieShopHRM\BethanysPieShopHRM.csproj", "{35A930D1-7533-47FF-8B38-C4EF2C5F7E3D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BethanysPieShopHRM", "Projects_Vault\BethanysPieShopHRM\BethanysPieShopHRM.csproj", "{35A930D1-7533-47FF-8B38-C4EF2C5F7E3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassesAndRecords", "Projects_Vault\ClassesAndRecords\ClassesAndRecords.csproj", "{F08236C9-7678-4423-88AD-7414ABEF731F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{35A930D1-7533-47FF-8B38-C4EF2C5F7E3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{35A930D1-7533-47FF-8B38-C4EF2C5F7E3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{35A930D1-7533-47FF-8B38-C4EF2C5F7E3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F08236C9-7678-4423-88AD-7414ABEF731F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F08236C9-7678-4423-88AD-7414ABEF731F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F08236C9-7678-4423-88AD-7414ABEF731F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F08236C9-7678-4423-88AD-7414ABEF731F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
